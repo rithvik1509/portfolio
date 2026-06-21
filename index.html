@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Rithvik'sgit  Portfolio</title>
+    <title>Rithvik's Portfolio</title>
     <style>
         body {
             background-color: #f0f8ff;
@@ -15,11 +15,33 @@
             text-align: center;
             padding: 20px;
         }
+        nav {
+            background-color: #0066cc;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         section {
-            padding: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
         }
         h2 {
             color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
         }
         button {
             background-color: #004080;
@@ -31,6 +53,13 @@
         button:hover {
             background-color: #0066cc;
         }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
@@ -39,12 +68,21 @@
         <p>Beginner Web Developer</p>
     </header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I am Rithvik, learning web development from scratch.</p>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>Portfolio Website – Built with HTML, CSS, JS</li>
+            <li>Stress-to-Art Converter – Creative AI project</li>
+        </ul>
     </section>
 
-    <section>
+    <section id="skills">
         <h2>My Skills</h2>
         <ul>
             <li>HTML Basics</li>
@@ -53,10 +91,14 @@
         </ul>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact Me</h2>
         <button onclick="showContact()">Click for Contact Info</button>
     </section>
+
+    <footer>
+        <p>© 2026 Rithvik | Built with ❤️ using HTML & CSS</p>
+    </footer>
 
     <script>
         function showContact() {
